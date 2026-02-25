@@ -17,3 +17,8 @@
 	url = https://github.com/templateflow/templateflow.git
 	datalad-id = c79c47b6-d0fb-11e8-aa11-64006a8a730f
 	datalad-url = https://github.com/templateflow/templateflow.git
+[submodule "sourcedata/fmriprep"]
+	path = sourcedata/fmriprep
+	url = https://github.com/OpenNeuroDerivatives/ds003085-fmriprep.git
+	datalad-id = c9f47fb8-0b24-47e9-a6b3-dff8ed3a1b8e
+	datalad-url = https://github.com/OpenNeuroDerivatives/ds003085-fmriprep.git
