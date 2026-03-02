@@ -1,6 +1,6 @@
 # ds003085 - XCP-D derivatives
 
-This dataset is a BIDS Derivatives dataset resulting from running XCP-D vVERSION on [ds003085](https://openneuro.org/datasets/ds003085).
+This dataset is a BIDS Derivatives dataset resulting from running XCP-D v0.14.1 on [ds003085](https://openneuro.org/datasets/ds003085).
 
 ## Methods
 
