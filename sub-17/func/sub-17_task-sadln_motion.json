@@ -1,0 +1,17 @@
+{
+  "Sources": [
+    "bids:preprocessed:sub-17/func/sub-17_task-sadln_desc-confounds_timeseries.tsv"
+  ],
+  "framewise_displacement": {
+    "Description": "Framewise displacement calculated according to Power et al. (2012).",
+    "HeadRadius": 50.0,
+    "Units": "mm"
+  },
+  "rmsd": {},
+  "rot_x": {},
+  "rot_y": {},
+  "rot_z": {},
+  "trans_x": {},
+  "trans_y": {},
+  "trans_z": {}
+}

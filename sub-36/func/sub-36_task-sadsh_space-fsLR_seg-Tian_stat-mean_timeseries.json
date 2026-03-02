@@ -1,0 +1,8 @@
+{
+  "SamplingFrequency": "TR",
+  "Sources": [
+    "bids:atlas:atlas-Tian/atlas-Tian_space-fsLR_den-91k_dseg.dlabel.nii",
+    "bids::sub-36/func/sub-36_task-sadsh_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii",
+    "bids::sub-36/func/sub-36_task-sadsh_space-fsLR_seg-Tian_stat-coverage_bold.tsv"
+  ]
+}

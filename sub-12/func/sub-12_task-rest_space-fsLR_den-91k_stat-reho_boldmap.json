@@ -1,0 +1,13 @@
+{
+  "Neighborhood": "vertices",
+  "SoftwareFilters": {
+    "Bandpass filter": {
+      "Filter order": 2,
+      "High-pass cutoff (Hz)": 0.01,
+      "Low-pass cutoff (Hz)": 0.08
+    }
+  },
+  "Sources": [
+    "bids::sub-12/func/sub-12_task-rest_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii"
+  ]
+}

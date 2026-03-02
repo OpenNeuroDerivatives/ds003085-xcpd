@@ -1,0 +1,113 @@
+#!/bin/sh
+
+set -eu
+
+jobid=20260225-182504-16d0
+subjob=$1
+num_subjobs=39
+
+metadir=/scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd/.reproman/jobs/local/20260225-182504-16d0
+rootdir=/home1/03201/jbwexler/.reproman/run-root
+workdir=/scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+
+_reproman_cmd_idx=$(($subjob + 1))
+export _reproman_cmd_idx
+
+echo "submitted" >"$metadir/status.$subjob"
+echo "[ReproMan] pre-command..."
+
+cd "$workdir"
+
+get_command () {
+    perl -n0e \
+         '$idx=$ENV{_reproman_cmd_idx}; print "$_" if $. == $idx;' \
+         "$metadir/command-array"
+}
+
+cmd=$(get_command)
+work_dir_tmp_bind=$( echo "$cmd" | grep -o -P "(?<=-w ')[^']+(?=')" )
+work_dir_base=$(basename "$work_dir_tmp_bind")
+software=$(dirname "$work_dir_tmp_bind" | xargs basename)
+work_dir_scratch="$SCRATCH/work_dir/${software}/${work_dir_base}"
+work_dir_tmp="/tmp/work_dir/${software}/${work_dir_base}"
+walltime=8:00:00
+walltime_seconds=$(echo "$walltime" | awk -F: '{ print ($1 * 3600) + ($2 * 60) + $3 }')
+walltime_90p=$(printf "%.0f" $(echo "$walltime_seconds * 0.9 - 300" | bc))
+
+mkdir -p "/tmp/work_dir/${software}"
+if [[ -d "$work_dir_scratch" ]]; then
+	echo "Copying existing work directory to /tmp/work_dir/${software}/"
+	rsync -a "$work_dir_scratch" "/tmp/work_dir/${software}/" && echo "Copy complete."
+fi
+
+if test -z "$cmd"
+then
+    echo "[ReproMan] failed getting command at position $_reproman_cmd_idx" >&2
+    echo "pre-command failure" >"$metadir/status.$subjob"
+    exit 1
+fi
+
+echo "running" >"$metadir/status.$subjob"
+echo "[ReproMan] executing command $cmd"
+echo "[ReproMan] ... within $PWD"
+timeout --preserve-status "${walltime_90p}"s /bin/sh -c "$cmd" && \
+    (rm -rf "$work_dir_tmp"; echo "succeeded" >"$metadir/status.$subjob") || \
+    (rsync -a --delete  "$work_dir_tmp" "$work_dir_scratch" ; 
+	echo "failed: $?" >"$metadir/status.$subjob";
+	mkdir -p "$metadir/failed" && touch "$metadir/failed/$subjob")
+
+nstatus () {
+    grep -E '^(succeed|fail)' "$metadir"/status.* | wc -l
+}
+
+if test $(nstatus) -eq 1; then
+
+	echo "[ReproMan] waiting for threshold of jobs to complete before continuing..."
+
+	job_name=ds003085-xcpd
+	software="${job_name#*-}"
+	dataset="${job_name%-*}"
+	work_dir_scratch="$SCRATCH/work_dir/$software"
+	work_dir_tmp="/tmp/work_dir/"
+	killjob_factors=.85,.25
+	threshold_factor=$(echo "$killjob_factors" | awk -F, '{ print $1 }')
+	add_time_factor=$(echo "$killjob_factors"| awk -F, '{ print $2 }')
+	majority_num=$(echo "$num_subjobs * $threshold_factor" | bc -l | xargs printf "%.0f\n")
+
+	while test $(nstatus) -lt "$majority_num"; do
+    	sleep 1
+	done
+
+	echo "[ReproMan] waiting for all jobs to complete before running post-command..."
+	runtime_stamp=$(squeue --job "$SLURM_JOB_ID" | tail -n 1 | awk '{ print $6 }')
+	runtime_seconds=$(echo "${runtime_stamp#*-}" | awk -F: '{ print ($1 * 3600) + ($2 * 60) + $3 }')
+	if [[ "$runtime_stamp" =~ [-] ]]; then
+		runtime_seconds=$((runtime_seconds+86400))
+	fi
+	add_time_seconds=$(echo "$runtime_seconds * $add_time_factor" | bc -l | xargs printf "%.0f\n")
+	count=0
+	while test $(nstatus) -lt "$num_subjobs" && test "$count" -lt "$add_time_seconds"; do
+    	sleep 1
+		count=$((count+1))
+	done
+
+	echo "[ReproMan] post-command..."
+
+		
+	mkdir -p "$rootdir/completed/"
+	touch "$rootdir/completed/$jobid"
+
+	if test $(nstatus) -lt "$num_subjobs"; then
+		collect.bash "$work_dir_tmp" "$work_dir_scratch"
+		for d in "${work_dir_scratch}/${dataset}_*_0"; do
+			subdir_0=$(basename "$d")
+			subdir=$(echo "$subdir_0" | sed 's/_0//g')
+			mv "$work_dir_scratch/$subdir" "$work_dir_scratch/${subdir}_old"
+			mv "$work_dir_scratch/$subdir_0" "$work_dir_scratch/$subdir"
+			rm -rf "$work_dir_scratch/${subdir}_old"
+		done
+		scancel "$SLURM_JOB_ID"
+	else
+		git -C "$workdir" annex add . --exclude ".reproman/*" --exclude "remora_*/*" --exclude "code/*" --exclude "sourcedata/raw/*" --exclude "sourcedata/templateflow/*"
+	fi
+fi

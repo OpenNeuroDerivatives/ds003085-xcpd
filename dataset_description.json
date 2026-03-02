@@ -1,0 +1,31 @@
+{
+    "Name": "XCP-D: A Robust Postprocessing Pipeline of fMRI data",
+    "BIDSVersion": "1.4.0",
+    "DatasetType": "derivative",
+    "GeneratedBy": [
+        {
+            "Name": "xcp_d",
+            "Version": "0.14.1",
+            "CodeURL": "https://github.com/PennLINC/xcp_d/archive/0.14.1.tar.gz",
+            "ConfigurationHash": "d2c86c25"
+        },
+        {
+            "Name": "fMRIPrep",
+            "Version": "22.0.0",
+            "CodeURL": "https://github.com/nipreps/fmriprep/archive/22.0.0.tar.gz"
+        }
+    ],
+    "Authors": [
+        "OpenNeuro Preprocessing Team"
+    ],
+    "HowToAcknowledge": "Include the generated boilerplate in the methods section.",
+    "License": "CC0",
+    "DatasetLinks": {
+        "preprocessed": "/scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd/sourcedata/fmriprep",
+        "templateflow": "https://github.com/templateflow/templateflow",
+        "atlas": "/scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd/atlases",
+        "xcpdatlases": "/usr/local/miniconda/lib/python3.10/site-packages/xcp_d/data/atlases",
+        "xcpd4s": "/AtlasPack",
+        "atlases": "/scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd/atlases"
+    }
+}

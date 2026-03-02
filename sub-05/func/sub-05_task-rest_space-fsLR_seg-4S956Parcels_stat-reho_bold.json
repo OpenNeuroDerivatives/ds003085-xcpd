@@ -1,0 +1,14 @@
+{
+  "Neighborhood": "vertices",
+  "SoftwareFilters": {
+    "Bandpass filter": {
+      "Filter order": 2,
+      "High-pass cutoff (Hz)": 0.01,
+      "Low-pass cutoff (Hz)": 0.08
+    }
+  },
+  "Sources": [
+    "bids:atlas:atlas-4S956Parcels/atlas-4S956Parcels_space-fsLR_den-91k_dseg.dlabel.nii",
+    "bids::sub-05/func/sub-05_task-rest_space-fsLR_den-91k_stat-reho_boldmap.dscalar.nii"
+  ]
+}
