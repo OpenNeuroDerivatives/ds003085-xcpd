@@ -1,0 +1,7 @@
+{
+  "Sources": [
+    "bids:atlas:atlas-MIDB/atlas-MIDB_space-fsLR_den-91k_dseg.dlabel.nii",
+    "bids::sub-12/func/sub-12_task-rest_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii",
+    "bids::sub-12/func/sub-12_task-rest_space-fsLR_seg-MIDB_den-91k_stat-coverage_boldmap.pscalar.nii"
+  ]
+}

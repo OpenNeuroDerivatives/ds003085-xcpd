@@ -1,0 +1,6 @@
+{
+  "Sources": [
+    "bids:atlas:atlas-MIDB/atlas-MIDB_space-fsLR_den-91k_dseg.dlabel.nii",
+    "bids::sub-38/func/sub-38_task-sadsh_space-fsLR_den-91k_stat-alff_boldmap.dscalar.nii"
+  ]
+}

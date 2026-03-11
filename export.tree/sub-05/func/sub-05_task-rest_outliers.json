@@ -1,0 +1,14 @@
+{
+  "Sources": [
+    "bids::sub-05/func/sub-05_task-rest_motion.tsv"
+  ],
+  "Threshold": 0.2,
+  "framewise_displacement": {
+    "Description": "Outlier time series based on framewise displacement.",
+    "Levels": {
+      "0": "Non-outlier volume",
+      "1": "Outlier volume"
+    },
+    "Threshold": 0.2
+  }
+}

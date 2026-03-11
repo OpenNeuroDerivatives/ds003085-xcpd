@@ -1,0 +1,419 @@
+_command_array:
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '01' -w '/node_tmp/work_dir/xcpd/ds003085_sub-01'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '02' -w '/node_tmp/work_dir/xcpd/ds003085_sub-02'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '03' -w '/node_tmp/work_dir/xcpd/ds003085_sub-03'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '04' -w '/node_tmp/work_dir/xcpd/ds003085_sub-04'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '05' -w '/node_tmp/work_dir/xcpd/ds003085_sub-05'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '06' -w '/node_tmp/work_dir/xcpd/ds003085_sub-06'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '08' -w '/node_tmp/work_dir/xcpd/ds003085_sub-08'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '09' -w '/node_tmp/work_dir/xcpd/ds003085_sub-09'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '10' -w '/node_tmp/work_dir/xcpd/ds003085_sub-10'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '11' -w '/node_tmp/work_dir/xcpd/ds003085_sub-11'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '12' -w '/node_tmp/work_dir/xcpd/ds003085_sub-12'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '13' -w '/node_tmp/work_dir/xcpd/ds003085_sub-13'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '14' -w '/node_tmp/work_dir/xcpd/ds003085_sub-14'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '15' -w '/node_tmp/work_dir/xcpd/ds003085_sub-15'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '16' -w '/node_tmp/work_dir/xcpd/ds003085_sub-16'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '17' -w '/node_tmp/work_dir/xcpd/ds003085_sub-17'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '18' -w '/node_tmp/work_dir/xcpd/ds003085_sub-18'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '19' -w '/node_tmp/work_dir/xcpd/ds003085_sub-19'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '20' -w '/node_tmp/work_dir/xcpd/ds003085_sub-20'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '21' -w '/node_tmp/work_dir/xcpd/ds003085_sub-21'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '22' -w '/node_tmp/work_dir/xcpd/ds003085_sub-22'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '23' -w '/node_tmp/work_dir/xcpd/ds003085_sub-23'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '24' -w '/node_tmp/work_dir/xcpd/ds003085_sub-24'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '25' -w '/node_tmp/work_dir/xcpd/ds003085_sub-25'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '26' -w '/node_tmp/work_dir/xcpd/ds003085_sub-26'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '27' -w '/node_tmp/work_dir/xcpd/ds003085_sub-27'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '28' -w '/node_tmp/work_dir/xcpd/ds003085_sub-28'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '29' -w '/node_tmp/work_dir/xcpd/ds003085_sub-29'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '30' -w '/node_tmp/work_dir/xcpd/ds003085_sub-30'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '31' -w '/node_tmp/work_dir/xcpd/ds003085_sub-31'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '32' -w '/node_tmp/work_dir/xcpd/ds003085_sub-32'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '33' -w '/node_tmp/work_dir/xcpd/ds003085_sub-33'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '34' -w '/node_tmp/work_dir/xcpd/ds003085_sub-34'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '35' -w '/node_tmp/work_dir/xcpd/ds003085_sub-35'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '36' -w '/node_tmp/work_dir/xcpd/ds003085_sub-36'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '37' -w '/node_tmp/work_dir/xcpd/ds003085_sub-37'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '38' -w '/node_tmp/work_dir/xcpd/ds003085_sub-38'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '39' -w '/node_tmp/work_dir/xcpd/ds003085_sub-39'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+- code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp --bind $SCRATCH/xcp-d_home:/home/xcp-d
+  code/containers/images/bids/bids-xcp-d--0.14.1.sif sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '40' -w '/node_tmp/work_dir/xcpd/ds003085_sub-40'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+_container_command_str: code/containers/scripts/singularity_cmd run --bind /tmp:/node_tmp
+  --bind $SCRATCH/xcp-d_home:/home/xcp-d code/containers/images/bids/bids-xcp-d--0.14.1.sif
+  sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '{p[sub]}' -w '/node_tmp/work_dir/xcpd/ds003085_sub-{p[sub]}'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+_dataset_id: 82940367-8acb-4588-b34b-d219316f6ccb
+_extra_inputs: &id001
+- code/containers/images/bids/bids-xcp-d--0.14.1.sif
+_extra_inputs_array:
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+- *id001
+_head: e2f09d883e26c45d9977f3c8f98e2609994a7e45
+_inputs_array: []
+_jobid: 20260225-182504-16d0
+_meta_directory: /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd/.reproman/jobs/local/20260225-182504-16d0
+_meta_directory_rel: .reproman/jobs/local/20260225-182504-16d0
+_num_subjobs: 39
+_outputs_array:
+- - sub-01.html
+  - sub-01/figures
+- - sub-02.html
+  - sub-02/figures
+- - sub-03.html
+  - sub-03/figures
+- - sub-04.html
+  - sub-04/figures
+- - sub-05.html
+  - sub-05/figures
+- - sub-06.html
+  - sub-06/figures
+- - sub-08.html
+  - sub-08/figures
+- - sub-09.html
+  - sub-09/figures
+- - sub-10.html
+  - sub-10/figures
+- - sub-11.html
+  - sub-11/figures
+- - sub-12.html
+  - sub-12/figures
+- - sub-13.html
+  - sub-13/figures
+- - sub-14.html
+  - sub-14/figures
+- - sub-15.html
+  - sub-15/figures
+- - sub-16.html
+  - sub-16/figures
+- - sub-17.html
+  - sub-17/figures
+- - sub-18.html
+  - sub-18/figures
+- - sub-19.html
+  - sub-19/figures
+- - sub-20.html
+  - sub-20/figures
+- - sub-21.html
+  - sub-21/figures
+- - sub-22.html
+  - sub-22/figures
+- - sub-23.html
+  - sub-23/figures
+- - sub-24.html
+  - sub-24/figures
+- - sub-25.html
+  - sub-25/figures
+- - sub-26.html
+  - sub-26/figures
+- - sub-27.html
+  - sub-27/figures
+- - sub-28.html
+  - sub-28/figures
+- - sub-29.html
+  - sub-29/figures
+- - sub-30.html
+  - sub-30/figures
+- - sub-31.html
+  - sub-31/figures
+- - sub-32.html
+  - sub-32/figures
+- - sub-33.html
+  - sub-33/figures
+- - sub-34.html
+  - sub-34/figures
+- - sub-35.html
+  - sub-35/figures
+- - sub-36.html
+  - sub-36/figures
+- - sub-37.html
+  - sub-37/figures
+- - sub-38.html
+  - sub-38/figures
+- - sub-39.html
+  - sub-39/figures
+- - sub-40.html
+  - sub-40/figures
+_reproman_version: 0.4.1
+_resolved_batch_parameters:
+- sub: '01'
+- sub: '02'
+- sub: '03'
+- sub: '04'
+- sub: '05'
+- sub: '06'
+- sub: 08
+- sub: 09
+- sub: '10'
+- sub: '11'
+- sub: '12'
+- sub: '13'
+- sub: '14'
+- sub: '15'
+- sub: '16'
+- sub: '17'
+- sub: '18'
+- sub: '19'
+- sub: '20'
+- sub: '21'
+- sub: '22'
+- sub: '23'
+- sub: '24'
+- sub: '25'
+- sub: '26'
+- sub: '27'
+- sub: '28'
+- sub: '29'
+- sub: '30'
+- sub: '31'
+- sub: '32'
+- sub: '33'
+- sub: '34'
+- sub: '35'
+- sub: '36'
+- sub: '37'
+- sub: '38'
+- sub: '39'
+- sub: '40'
+_resolved_command_str: sourcedata/fmriprep /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+  participant --participant-label '{p[sub]}' -w '/node_tmp/work_dir/xcpd/ds003085_sub-{p[sub]}'
+  -vv --mode linc --fd-thresh 0.2 --dummy-scans auto --notrack --fs-license-file /home1/03201/jbwexler/.freesurfer.txt
+  --bids-filter-file code/bids-filters.json
+_spec_version: '1.0'
+_submission_id: null
+batch_parameters:
+- sub=01,02,03,04,05,06,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40
+command:
+- sourcedata/fmriprep
+- /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+- participant
+- --participant-label
+- '{p[sub]}'
+- -w
+- /node_tmp/work_dir/xcpd/ds003085_sub-{p[sub]}
+- -vv
+- --mode
+- linc
+- --fd-thresh
+- '0.2'
+- --dummy-scans
+- auto
+- --notrack
+- --fs-license-file
+- /home1/03201/jbwexler/.freesurfer.txt
+- --bids-filter-file
+- code/bids-filters.json
+container: code/containers/bids-xcp-d
+job_name: ds003085-xcpd
+killjob_factors: .85,.25
+launcher: 'true'
+local_directory: /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd
+mail_type: END
+mail_user: jbwexler@stanford.edu
+num_nodes: '3'
+num_processes: '39'
+orchestrator: datalad-no-remote
+outputs:
+- sub-{p[sub]}.html
+- sub-{p[sub]}/figures
+queue: normal
+resource_id: bc1235e8-b28c-11eb-bce1-e4434b618f52
+resource_name: local
+root_directory: /home1/03201/jbwexler/.reproman/run-root
+submitter: slurm
+walltime: '8:00:00'
+working_directory: /scratch2/03201/jbwexler/openneuro_derivatives/derivatives/xcpd/ds003085-xcpd

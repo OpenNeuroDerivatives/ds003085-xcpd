@@ -1,0 +1,6 @@
+{
+  "Sources": [
+    "bids:atlas:atlas-Gordon/atlas-Gordon_space-fsLR_den-91k_dseg.dlabel.nii",
+    "bids::sub-38/func/sub-38_task-sadsh_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii"
+  ]
+}

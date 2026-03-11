@@ -1,0 +1,13 @@
+{
+  "Directed": false,
+  "NodeFiles": [
+    "bids:atlas:atlas-Gordon/atlas-Gordon_space-fsLR_den-91k_dseg.dlabel.nii"
+  ],
+  "RelationshipMeasure": "Pearson correlation coefficient",
+  "Sources": [
+    "bids::sub-25/func/sub-25_task-sadsh_space-fsLR_seg-Gordon_stat-mean_timeseries.tsv"
+  ],
+  "StorageFormat": "Full",
+  "ValidDiagonal": false,
+  "Weighted": true
+}
