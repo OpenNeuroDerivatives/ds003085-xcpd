@@ -1,7 +1,0 @@
-{
-  "Sources": [
-    "bids:atlas:atlas-4S1056Parcels/atlas-4S1056Parcels_space-fsLR_den-91k_dseg.dlabel.nii",
-    "bids::sub-38/func/sub-38_task-sadsh_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii",
-    "bids::sub-38/func/sub-38_task-sadsh_space-fsLR_seg-4S1056Parcels_den-91k_stat-coverage_boldmap.pscalar.nii"
-  ]
-}

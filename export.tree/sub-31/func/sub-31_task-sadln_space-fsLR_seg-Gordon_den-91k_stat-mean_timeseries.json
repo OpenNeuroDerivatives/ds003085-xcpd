@@ -1,7 +1,0 @@
-{
-  "Sources": [
-    "bids:atlas:atlas-Gordon/atlas-Gordon_space-fsLR_den-91k_dseg.dlabel.nii",
-    "bids::sub-31/func/sub-31_task-sadln_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii",
-    "bids::sub-31/func/sub-31_task-sadln_space-fsLR_seg-Gordon_den-91k_stat-coverage_boldmap.pscalar.nii"
-  ]
-}

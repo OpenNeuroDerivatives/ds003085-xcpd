@@ -1,8 +1,0 @@
-{
-  "SamplingFrequency": "TR",
-  "Sources": [
-    "bids:atlas:atlas-Gordon/atlas-Gordon_space-fsLR_den-91k_dseg.dlabel.nii",
-    "bids::sub-06/func/sub-06_task-rest_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii",
-    "bids::sub-06/func/sub-06_task-rest_space-fsLR_seg-Gordon_stat-coverage_bold.tsv"
-  ]
-}

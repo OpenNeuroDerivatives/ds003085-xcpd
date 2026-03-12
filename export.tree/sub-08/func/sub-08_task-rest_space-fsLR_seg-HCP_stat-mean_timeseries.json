@@ -1,8 +1,0 @@
-{
-  "SamplingFrequency": "TR",
-  "Sources": [
-    "bids:atlas:atlas-HCP/atlas-HCP_space-fsLR_den-91k_dseg.dlabel.nii",
-    "bids::sub-08/func/sub-08_task-rest_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii",
-    "bids::sub-08/func/sub-08_task-rest_space-fsLR_seg-HCP_stat-coverage_bold.tsv"
-  ]
-}

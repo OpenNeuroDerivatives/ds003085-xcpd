@@ -1,8 +1,0 @@
-{
-  "SamplingFrequency": "TR",
-  "Sources": [
-    "bids:atlas:atlas-MIDB/atlas-MIDB_space-fsLR_den-91k_dseg.dlabel.nii",
-    "bids::sub-38/func/sub-38_task-sadsh_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii",
-    "bids::sub-38/func/sub-38_task-sadsh_space-fsLR_seg-MIDB_stat-coverage_bold.tsv"
-  ]
-}

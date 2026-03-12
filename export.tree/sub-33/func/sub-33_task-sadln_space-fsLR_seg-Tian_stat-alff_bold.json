@@ -1,6 +1,0 @@
-{
-  "Sources": [
-    "bids:atlas:atlas-Tian/atlas-Tian_space-fsLR_den-91k_dseg.dlabel.nii",
-    "bids::sub-33/func/sub-33_task-sadln_space-fsLR_den-91k_stat-alff_boldmap.dscalar.nii"
-  ]
-}
