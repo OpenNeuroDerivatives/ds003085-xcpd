@@ -1,0 +1,13 @@
+{
+  "Directed": false,
+  "NodeFiles": [
+    "bids:atlas:atlas-MyersLabonte/atlas-MyersLabonte_space-fsLR_den-91k_dseg.dlabel.nii"
+  ],
+  "RelationshipMeasure": "Pearson correlation coefficient",
+  "Sources": [
+    "bids::sub-30/func/sub-30_task-rest_space-fsLR_seg-MyersLabonte_den-91k_stat-mean_timeseries.ptseries.nii"
+  ],
+  "StorageFormat": "Full",
+  "ValidDiagonal": false,
+  "Weighted": true
+}

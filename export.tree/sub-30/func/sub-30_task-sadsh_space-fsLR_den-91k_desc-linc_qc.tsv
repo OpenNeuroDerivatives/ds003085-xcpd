@@ -1,0 +1,2 @@
+sub	task	space	den	mean_fd	mean_fd_post_censoring	mean_relative_rms	max_relative_rms	mean_dvars_initial	mean_dvars_final	num_dummy_volumes	num_censored_volumes	num_retained_volumes	fd_dvars_correlation_initial	fd_dvars_correlation_final
+30	sadsh	fsLR	91k	0.10059062007380067	0.08485121362403086	0.05151445544747081	0.131276	1.1986093914589844	1.0788009073275031	0	13	258	0.7900092844614497	0.3598291710198306

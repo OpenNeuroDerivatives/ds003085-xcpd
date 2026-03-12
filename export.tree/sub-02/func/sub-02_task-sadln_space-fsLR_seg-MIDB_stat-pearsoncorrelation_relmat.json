@@ -1,0 +1,13 @@
+{
+  "Directed": false,
+  "NodeFiles": [
+    "bids:atlas:atlas-MIDB/atlas-MIDB_space-fsLR_den-91k_dseg.dlabel.nii"
+  ],
+  "RelationshipMeasure": "Pearson correlation coefficient",
+  "Sources": [
+    "bids::sub-02/func/sub-02_task-sadln_space-fsLR_seg-MIDB_stat-mean_timeseries.tsv"
+  ],
+  "StorageFormat": "Full",
+  "ValidDiagonal": false,
+  "Weighted": true
+}

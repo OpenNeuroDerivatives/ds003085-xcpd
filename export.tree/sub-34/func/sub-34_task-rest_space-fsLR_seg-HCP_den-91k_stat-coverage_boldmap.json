@@ -1,0 +1,6 @@
+{
+  "Sources": [
+    "bids:atlas:atlas-HCP/atlas-HCP_space-fsLR_den-91k_dseg.dlabel.nii",
+    "bids::sub-34/func/sub-34_task-rest_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii"
+  ]
+}

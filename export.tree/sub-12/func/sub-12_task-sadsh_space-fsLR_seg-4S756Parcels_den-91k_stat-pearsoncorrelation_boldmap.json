@@ -1,0 +1,13 @@
+{
+  "Directed": false,
+  "NodeFiles": [
+    "bids:atlas:atlas-4S756Parcels/atlas-4S756Parcels_space-fsLR_den-91k_dseg.dlabel.nii"
+  ],
+  "RelationshipMeasure": "Pearson correlation coefficient",
+  "Sources": [
+    "bids::sub-12/func/sub-12_task-sadsh_space-fsLR_seg-4S756Parcels_den-91k_stat-mean_timeseries.ptseries.nii"
+  ],
+  "StorageFormat": "Full",
+  "ValidDiagonal": false,
+  "Weighted": true
+}

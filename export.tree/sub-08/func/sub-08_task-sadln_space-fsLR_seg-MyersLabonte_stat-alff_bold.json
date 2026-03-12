@@ -1,0 +1,6 @@
+{
+  "Sources": [
+    "bids:atlas:atlas-MyersLabonte/atlas-MyersLabonte_space-fsLR_den-91k_dseg.dlabel.nii",
+    "bids::sub-08/func/sub-08_task-sadln_space-fsLR_den-91k_stat-alff_boldmap.dscalar.nii"
+  ]
+}

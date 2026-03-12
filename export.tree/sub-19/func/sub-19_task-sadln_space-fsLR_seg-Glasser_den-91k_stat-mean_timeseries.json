@@ -1,0 +1,7 @@
+{
+  "Sources": [
+    "bids:atlas:atlas-Glasser/atlas-Glasser_space-fsLR_den-91k_dseg.dlabel.nii",
+    "bids::sub-19/func/sub-19_task-sadln_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii",
+    "bids::sub-19/func/sub-19_task-sadln_space-fsLR_seg-Glasser_den-91k_stat-coverage_boldmap.pscalar.nii"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "Sources": [
+    "bids:atlas:atlas-MyersLabonte/atlas-MyersLabonte_space-fsLR_den-91k_dseg.dlabel.nii",
+    "bids::sub-05/func/sub-05_task-sadsh_space-fsLR_den-91k_desc-denoised_bold.dtseries.nii",
+    "bids::sub-05/func/sub-05_task-sadsh_space-fsLR_seg-MyersLabonte_den-91k_stat-coverage_boldmap.pscalar.nii"
+  ]
+}

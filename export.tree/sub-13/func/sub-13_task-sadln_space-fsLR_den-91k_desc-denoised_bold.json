@@ -1,0 +1,18 @@
+{
+  "DelayTime": 0.18500000000000005,
+  "RepetitionTime": 1,
+  "SliceTimingCorrected": false,
+  "SoftwareFilters": {
+    "Bandpass filter": {
+      "Filter order": 2,
+      "High-pass cutoff (Hz)": 0.01,
+      "Low-pass cutoff (Hz)": 0.08
+    }
+  },
+  "Sources": [
+    "bids:preprocessed:sub-13/func/sub-13_task-sadln_space-fsLR_den-91k_bold.dtseries.nii",
+    "bids::sub-13/func/sub-13_task-sadln_outliers.tsv",
+    "bids::sub-13/func/sub-13_task-sadln_design.tsv"
+  ],
+  "TaskName": "sadln"
+}
